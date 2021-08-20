@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Pastelería Grecia</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./css/styles.css">
+		<script defer src="./js/main.js"></script>
+	
+	</head>
+	<body>
+		<header>
+			<h1>Pastelería Grecia</h1>
+			<p>Comprometidos con el sabor</p>
+			<div class="img">
+					<img src="./images/header.jpg" alt="El Partenón">
+			</div>
+			<div class="bg-img">
+			</div>
+		</header>
+		<nav>
+			<button class="menu-button"></button>
+			<div id="menu" class="hidden">
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#about">Quiénes somos</a></li>
+					<li><a href="#services">Nuestros servicios</a></li>
+					<li><a href="#contact">Contacto</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<section id="about">
+				<h2>Quiénes somos</h2>
+				<section class="history">
+					<h3>Historia</h3>
+					<div class="txt">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dolor at ligula interdum porta at quis lacus. Maecenas urna eros, semper id nisl eu, lobortis sagittis erat. Nam pretium, felis et dapibus cursus, ex nibh sollicitudin ligula, vitae placerat purus est in sem. In tortor urna, lacinia et tellus vitae, volutpat auctor erat. Mauris eu feugiat eros. Sed pretium commodo leo at vestibulum. Fusce id mauris lorem. Maecenas consectetur sem nec tincidunt tincidunt. Pellentesque at dui eget risus efficitur accumsan. Maecenas nec ultricies turpis. Aenean non suscipit est. Aliquam erat volutpat. Donec egestas, augue auctor efficitur consectetur, libero nisl.</p>
+					</div>
+					<div class="img">
+						<img src="./images/history.jpg" alt="">
+					</div>
+				</section>
+				<section class="mision">
+					<h3>Misión</h3>
+					<div class="txt">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dolor at ligula interdum porta at quis lacus. Maecenas urna eros, semper id nisl eu, lobortis sagittis erat. Nam pretium, felis et dapibus cursus, ex nibh sollicitudin ligula, vitae placerat purus est in sem. In tortor urna, lacinia et tellus vitae, volutpat auctor erat. Mauris eu feugiat eros. Sed pretium commodo leo at vestibulum. Fusce id mauris lorem. Maecenas consectetur sem nec tincidunt tincidunt. Pellentesque at dui eget risus efficitur accumsan. Maecenas nec ultricies turpis. Aenean non suscipit est. Aliquam erat volutpat. Donec egestas, augue auctor efficitur consectetur, libero nisl.</p>
+					</div>
+					<div class="img">
+						<img src="./images/mission.jpg" alt="">
+					</div>
+				</section>
+				<section class="vision">
+					<h3>Visión</h3>
+					<div class="txt">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dolor at ligula interdum porta at quis lacus. Maecenas urna eros, semper id nisl eu, lobortis sagittis erat. Nam pretium, felis et dapibus cursus, ex nibh sollicitudin ligula, vitae placerat purus est in sem. In tortor urna, lacinia et tellus vitae, volutpat auctor erat. Mauris eu feugiat eros. Sed pretium commodo leo at vestibulum. Fusce id mauris lorem. Maecenas consectetur sem nec tincidunt tincidunt. Pellentesque at dui eget risus efficitur accumsan. Maecenas nec ultricies turpis. Aenean non suscipit est. Aliquam erat volutpat. Donec egestas, augue auctor efficitur consectetur, libero nisl.</p>
+					</div>
+					<div class="img">
+						<img src="./images/vision.jpg" alt="">
+					</div>
+				</section>
+			</section>
+			<section id="services">
+				<h2>Nuestros servicios</h2>
+				<section id="your-cake">
+					<h3>Crea tu pastel.</h3>
+					<p>Tu pastel cuesta <span class="price">0</span> €.</p>
+					<div class="cake-generator">
+						<form>
+							<div class="input-container">
+								<label for="size-input">Tamaño</label>
+								<select id="size-input" name="size" required>
+									<option value="" disabled selected>Selecciona un tamaño.</option>
+									<option value="small">Chico</option>
+									<option value="medium">Mediano</option>
+									<option value="large">Grande</option>
+								</select>
+							</div>
+							<div class="input-container">
+								<label for="flavour-top">Bizcocho superior</label>
+								<select id="flavour-top" name="flavour-top" required>
+									<option disabled selected>Selecciona un sabor.</option>
+									<option value="chocolate">Chocolate</option>
+									<option value="vanilla">Vainilla</option>
+									<option value="red-velvet">Red Velvet</option>
+								</select>
+							</div>
+							<div class="input-container">
+								<label for="flavour-bottom">Bizcocho inferior</label>
+								<select id="flavour-bottom" name="flavour-bottom" required>
+									<option disabled selected>Selecciona un sabor.</option>
+									<option value="chocolate">Chocolate</option>
+									<option value="vanilla">Vainilla</option>
+									<option value="red-velvet">Red Velvet</option>
+								</select>
+							</div>
+							<div class="input-container">
+								<label for="cream">Crema</label>
+								<select id="cream" name="cream" required>
+									<option disabled selected>Selecciona un sabor.</option>
+									<option value="chocolate">Chocolate</option>
+									<option value="milk">Dulce de leche</option>
+									<option value="buttercream">Buttercream</option>
+									<option value="moka">Moka</option>
+									<option value="cheese-frosting">Cheese frosting</option>
+									<option value="single-cream">Nata</option>						
+								</select>
+							</div>
+							<div class="input-container">
+								<p>Frutas</p>
+								<label><input type="checkbox" name="fruits" id="pineapple" value="pineapple">Piña</label>
+								<label><input type="checkbox" name="fruits" id="strawberry" value="strawberry">Fresa</label>
+								<label><input type="checkbox" name="fruits" id="raspberry" value="raspberry">Frambuesa</label>
+								<label><input type="checkbox" name="fruits" id="blueberry" value="blueberry">Arándano</label>
+								<label><input type="checkbox" name="fruits" id="peach" value="peach">Melocotón</label>							
+							</div>
+							<button class="price-button">Calcular precio</button>
+						</form>
+						<div class="preview">
+							<div class="cake">
+								<div class="flavour-top">
+								</div>
+								<div class="flavour-bottom">
+								</div>
+								<div class="cream">
+								</div>
+								<div class="fruits">
+									<div class="fruit pineapple"></div>
+									<div class="fruit strawberry"></div>
+									<div class="fruit blueberry"></div>
+									<div class="fruit raspberry"></div>
+									<div class="fruit peach"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="our-cakes">
+					<h3>Nuestros pasteles</h3>
+					<div class="cake-card">
+						<div class="img">
+							<img src="./images/cinnamon.jpg" alt="">
+						</div>
+						<div class="cake-info">
+							<h4 class="cake-name">Canela pasión</h4>
+							<p class="cake-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dolor at ligula interdum porta at quis lacus. Maecenas urna eros, semper id nisl eu, lobortis sagittis erat.</p>
+							<p class="cake-price">35 €</p>
+						</div>
+					</div>
+					<div class="cake-card">
+						<div class="img">
+							<img src="./images/chocolate.jpg" alt="">
+						</div>
+						<div class="cake-info">
+							<h4 class="cake-name">Chocolate acción</h4>
+							<p class="cake-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dolor at ligula interdum porta at quis lacus. Maecenas urna eros, semper id nisl eu, lobortis sagittis erat.</p>
+							<p class="cake-price">30 €</p>
+						</div>
+					</div>
+					<div class="cake-card">
+						<div class="img">
+							<img src="./images/vanilla.jpg" alt="">
+						</div>
+						<div class="cake-info">
+							<h4 class="cake-name">Vainilla fría</h4>
+							<p class="cake-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dolor at ligula interdum porta at quis lacus. Maecenas urna eros, semper id nisl eu, lobortis sagittis erat.</p>
+							<p class="cake-price">20 €</p>
+						</div>
+					</div>
+					<div class="cake-card">
+						<div class="img">
+							<img src="./images/peach.jpg" alt="">
+						</div>
+						<div class="cake-info">
+							<h4 class="cake-name">Melocotón ardiente</h4>
+							<p class="cake-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dolor at ligula interdum porta at quis lacus. Maecenas urna eros, semper id nisl eu, lobortis sagittis erat.</p>
+							<p class="cake-price">40 €</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section id="contact">
+				<h2>Contacto</h2>
+				<address>Estamos en esta calle.
+				<br>
+				Este es nuestro número telefónico.
+				<br>
+				Este es nuestro correo electrónico.
+				</address>
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14931.825084946839!2d-103.45095207051598!3d20.671357979087546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428aeb035f0f263%3A0xd25b45759a857b46!2sParque%20Metropolitano%2C%20Zapopan%2C%20Jalisco!5e0!3m2!1sen!2smx!4v1629394561949!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</section>
+		</main>
+		<aside>
+			<div class="aside">
+			<h2>Síguenos en redes sociales.</h2>
+			<div class="img">
+					<a href="#" target="_blank"><img src="./images/facebook.png" alt="Logo de Facebook"></a>
+			</div>
+			<div class="img">
+					<a href="#" target="_blank"><img src="./images/instagram.png" alt="Logo de Instagram"></a>
+			</div>
+			</div>
+		</aside>
+		<footer>
+			<p>Pastelería Grecia &copy; 2021</p>
+		</footer>
+	</body>
+</html>
