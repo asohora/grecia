@@ -449,7 +449,7 @@ main section:not(#about) h2 {
 }
 
 .cream {
-	--cream-color:;
+	--cream-color:transparent;
 	height: 30%;
 	width: 100%;
 	background-image: radial-gradient(var(--cream-color) 75%, transparent 75%);
